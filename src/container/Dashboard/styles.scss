@@ -1,0 +1,11 @@
+.dash-table {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+
+    th,
+    td {
+        border: 1px solid black;
+    }
+}
