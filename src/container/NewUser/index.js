@@ -7,8 +7,6 @@ import RenderInputField from '../../components/UI/formFields/RenderInputField'
 import { saveUserData, selectIsSaved } from "../Dashboard/dashboardSlice"
 import { validateName, validateEmail, validatePhoneNo, validateCity, validateCompany } from '../formValidators'
 
-import "./styles.scss"
-
 
 const NewUser = () => {
   const isSaved = useSelector(selectIsSaved)

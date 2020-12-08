@@ -1,7 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { getFormValues } from "redux-form"
-import { reducerFun } from '../../shared/reducerFun';
-import { createActionSignals } from '../../shared/utility';
 import { getDashBoardApi, deleteDashBoardApi, saveUserApi, getUserByIdApi, updatUserApi } from "./api"
 
 
@@ -12,8 +10,8 @@ const initial = {
   finished: true,
 }
 
-export const counterSlice = createSlice({
-  name: 'counter',
+export const dashboardSlice = createSlice({
+  name: 'dashboard',
   initialState: {
     dashBoardData: initial,
     userData: initial,
@@ -84,7 +82,7 @@ export const {
   getUserFailure,
   isSavedUser,
   isUpdateUser
-} = counterSlice.actions;
+} = dashboardSlice.actions;
 
 
 export const getDashboardData = () => {
@@ -142,11 +140,11 @@ export const selectDashData = state => state.dashboard.dashBoardData
 export const selectIsSaved = state => state.dashboard.saveUser.isSaved
 
 
-const counterReducer = counterSlice.reducer
+const dashboardReducer = dashboardSlice.reducer
 
 export const dashboardData = state => {
   console.log("state: ".state)
   return state.dashBoardData
 }
 
-export default counterReducer;
+export default dashboardReducer;

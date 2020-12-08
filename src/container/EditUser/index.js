@@ -6,8 +6,6 @@ import Button from '../../components/UI/Button'
 import RenderInputField from '../../components/UI/formFields/RenderInputField'
 import { getUserById, updateUserById } from "../Dashboard/dashboardSlice"
 import { validateName, validateEmail, validatePhoneNo, validateCity, validateCompany } from '../formValidators'
-import "./styles.scss"
-
 
 class EditUser extends Component {
   componentDidMount() {

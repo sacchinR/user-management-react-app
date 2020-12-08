@@ -9,11 +9,6 @@ class Input extends Component {
     }
   }
 
-  onClearInput = () => {
-    const { onChange } = this.props
-    if (onChange) onChange("")
-  }
-
   render() {
     const {
       name,
@@ -22,7 +17,6 @@ class Input extends Component {
       error,
       isInvalid,
       hasPlaceholder,
-      renderInput,
       value,
       subTitle,
       className,

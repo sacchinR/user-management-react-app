@@ -7,7 +7,6 @@ import {
   getDashboardData,
   deleteDashboardData
 } from './dashboardSlice';
-import './styles.scss';
 
 const DashTable = ({ data, handleDelete }) => (
   <Table striped bordered hover size="sm" className="mt-5">
